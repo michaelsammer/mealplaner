@@ -1,0 +1,26 @@
+<div class="login-main">
+  <div class="login-logo">
+    <img src="assets/logo_144.png" alt="Logo mealplaner" />
+    <p>Meal planer</p>
+  </div>
+  <div class="login-content">
+    <form (submit)="login()">
+      <label>Login or sign up for free</label>
+      <input type="email" name="loginMail" [(ngModel)]="email" placeholder="E-Mail" required>
+      <input type="password" name="loginPass" [(ngModel)]="password" placeholder="Passwort" required>
+      <button type="submit">LOGIN</button>
+      <div class="login-seperator">
+        <p>or</p>
+      </div>
+      <button type="button">REGISTER for free</button>
+    </form>
+
+    <div class="login-social">
+      <button class="google-button" (click)="loginWithGoogle()">Login mit Google</button>
+    </div>
+    
+  </div>
+  
+</div>
+
+

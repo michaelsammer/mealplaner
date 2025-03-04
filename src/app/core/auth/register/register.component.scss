@@ -1,0 +1,85 @@
+$mealer-blue1: #56B8FF;
+$mealer-blue2: #3B8BC5;
+
+.register-main {
+    min-height: 20rem;
+    width: 20rem;
+    margin: 5rem auto;
+}
+
+.register-logo {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        margin: auto;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.register-content {
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin: auto;
+            padding: .5rem 1rem 1rem;
+        }
+
+        input {
+            margin: .4rem 0;
+            padding: .7rem;
+            border-radius: .6rem;
+            border: 1px solid $mealer-blue2;
+        }
+
+        button {
+            margin: .4rem 0;
+            padding: .7rem;
+            border-radius: .6rem;
+            border: 1px solid $mealer-blue2;
+            background-color: $mealer-blue1;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .register-seperator {
+            p {
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+
+    .register-social {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        button {
+            margin: .4rem 0;
+            padding: .7rem;
+            border-radius: .6rem;
+            font-weight: bold;
+            width: 100%;
+            background-color: white;
+            border: 1px solid $mealer-blue2;
+            cursor: pointer;
+        }
+    }
+}

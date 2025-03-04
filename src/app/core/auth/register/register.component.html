@@ -1,0 +1,22 @@
+<div class="register-main">
+    <div class="register-logo">
+      <img src="assets/logo_144.png" alt="Logo mealplaner" />
+      <p>Meal planer</p>
+    </div>
+    <div class="register-content">
+      <form (submit)="register()">
+        <label>register or sign up for free</label>
+        <input type="email" name="registerMail" [(ngModel)]="email" placeholder="E-Mail" required>
+        <input type="password" name="registerPass" [(ngModel)]="password" placeholder="Passwort" required>
+        <button type="submit">REGISTER</button>
+        <div class="register-seperator">
+          <p>or</p>
+        </div>
+        <button type="button" [routerLink]="['/login']">Login</button>
+      </form>
+    </div>
+    
+  </div>
+  
+  
+  

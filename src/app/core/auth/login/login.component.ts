@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,11 +13,13 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
   
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   login() {
     this.authService.login(this.email, this.password)
-      .then(user => console.log('Eingeloggt:', user))
+      .then(user => {
+        this.router.navigate(['/']);
+      })
       .catch(err => console.error('Fehler:', err));
   }
 

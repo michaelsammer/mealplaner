@@ -6,6 +6,7 @@
     <div class="register-content">
       <form (submit)="register()">
         <label>register or sign up for free</label>
+        <input type="text" name="registerName" [(ngModel)]="displayName" placeholder="Username" required>
         <input type="email" name="registerMail" [(ngModel)]="email" placeholder="E-Mail" required>
         <input type="password" name="registerPass" [(ngModel)]="password" placeholder="Passwort" required>
         <button type="submit">REGISTER</button>

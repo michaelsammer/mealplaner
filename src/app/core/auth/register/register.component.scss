@@ -1,5 +1,4 @@
-$mealer-blue1: #56B8FF;
-$mealer-blue2: #3B8BC5;
+@use '../../../stylepattern/colors';
 
 .register-main {
     min-height: 20rem;
@@ -44,15 +43,15 @@ $mealer-blue2: #3B8BC5;
             margin: .4rem 0;
             padding: .7rem;
             border-radius: .6rem;
-            border: 1px solid $mealer-blue2;
+            border: 1px solid colors.$mealer-blue2;
         }
 
         button {
             margin: .4rem 0;
             padding: .7rem;
             border-radius: .6rem;
-            border: 1px solid $mealer-blue2;
-            background-color: $mealer-blue1;
+            border: 1px solid colors.$mealer-blue2;
+            background-color: colors.$mealer-blue1;
             color: white;
             font-weight: bold;
             cursor: pointer;
@@ -78,7 +77,7 @@ $mealer-blue2: #3B8BC5;
             font-weight: bold;
             width: 100%;
             background-color: white;
-            border: 1px solid $mealer-blue2;
+            border: 1px solid colors.$mealer-blue2;
             cursor: pointer;
         }
     }

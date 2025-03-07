@@ -1,0 +1,44 @@
+@use '../../../stylepattern/colors';
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0.5rem 2rem 0.5rem;
+
+    background-color: colors.$mealer-blue3;
+    color: whitesmoke;
+
+    .header-logo {
+        display: flex;
+
+        img {
+            margin: auto;
+        }
+
+        div {
+            margin: auto 1rem;
+            font-size: 2.5rem;
+        }
+    }
+
+    .header-user {
+        margin: auto 0;
+        display: flex;
+
+        .header-user-name {
+            margin: auto;
+            padding: 0 1rem;
+        }
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+
+            mat-icon {
+                cursor: pointer;
+            }
+        }
+        
+    }
+}

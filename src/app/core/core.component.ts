@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-core',
   standalone: false,
   templateUrl: './core.component.html',
-  styleUrl: './core.component.scss'
+  styleUrl: './core.component.scss',
 })
 export class CoreComponent {
 

@@ -1,1 +1,21 @@
-<app-header></app-header>
+<div class="core-content">
+    <app-header></app-header>
+
+    <div class="main-content">
+        <app-sidebar></app-sidebar>
+
+        <mat-sidenav-container style="width: 100%;">
+            <mat-sidenav #sidenav mode="side" style="width: 12rem;">
+                sidebar shown
+            </mat-sidenav>
+
+            <mat-sidenav-content>
+                <a (click)="sidenav.toggle()">>></a>
+                <router-outlet></router-outlet>
+            </mat-sidenav-content>
+
+        </mat-sidenav-container>
+    </div>
+
+    <app-footer></app-footer>
+</div>

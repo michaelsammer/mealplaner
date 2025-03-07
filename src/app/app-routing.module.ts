@@ -6,7 +6,7 @@ import { CoreComponent } from './core/core.component';
 import { AuthGuard } from './core/auth/auth.guard';
 
 const routes: Routes = [
-  { path: '', component: CoreComponent, canActivate: [AuthGuard] },
+  { path: '', loadChildren: () => import('./core/core.module').then((m) => m.CoreModule) },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent}
 ];

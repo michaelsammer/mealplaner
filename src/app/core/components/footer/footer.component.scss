@@ -1,0 +1,9 @@
+@use '../../../stylepattern/colors';
+
+footer {
+    display: flex;
+    height: 3rem;
+    color: whitesmoke;
+    background-color: colors.$mealer-blue3;
+    border-top: 1px solid colors.$mealer-green2;
+}

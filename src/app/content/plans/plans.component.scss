@@ -1,0 +1,47 @@
+@use '../../stylepattern/colors';
+
+table, th, td {
+    border: 3px solid colors.$mealer-green3;
+    border-collapse: collapse;
+  }
+
+table {
+    margin: 2rem;
+    min-height: 90%;
+    min-width: 70%;
+    border: 0;
+
+    thead {
+        font-size: larger;
+
+        tr {
+            border: 0;
+        }
+
+        th {
+            width: 10%;
+            border: 0;
+        }
+        td {
+            color: colors.$mealer-blue3;
+            border: 0;
+            height: 2rem;
+            width: 30%;
+            text-align: center;
+        }
+    }
+
+    tbody {
+
+        tr {
+            h2 {
+                color: colors.$mealer-green3;
+            }
+
+            td {
+                vertical-align: top;
+                text-align: right;
+            }
+        }
+    }
+}

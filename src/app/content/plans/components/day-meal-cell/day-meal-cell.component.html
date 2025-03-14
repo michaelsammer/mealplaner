@@ -1,8 +1,15 @@
-<a class="add-button" ><mat-icon aria-hidden="false" aria-label="Add" fontIcon="add" color="#FFF"></mat-icon></a>
+<a class="add-button" (click)="openAddDialog()" ><mat-icon aria-hidden="false" aria-label="Add" fontIcon="add" color="#FFF"></mat-icon></a>
 
-<div class="meal-cell">
+<div class="meal-cell" cdkDropList [cdkDropListData]="meals" (cdkDropListDropped)="drop($event)"  >
     
-    <div *ngFor="let meal of meals">
-        {{meal}}
+    <div *ngFor="let meal of meals" class="meal" cdkDrag >
+        <div class="meal-cell-drag" cdkDragHandle>
+            <mat-icon aria-hidden="false" aria-label="Drag" fontIcon="drag_indicator" color="#FFF"></mat-icon>
+        </div>
+        <span>{{meal.name}}</span>
+        <div class="meal-cell-delete" (click)="remove(meal)">
+            <mat-icon aria-hidden="false" aria-label="Delete" fontIcon="delete" color="#FFF"></mat-icon>
+        </div>
     </div>
+
 </div>

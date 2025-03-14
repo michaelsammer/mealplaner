@@ -1,0 +1,9 @@
+<div class="dialog">
+  <h3>Add menu for {{data.day.name}} {{data.day.date| date: 'dd.MM.' }}</h3>
+  <p>Gericht:</p>
+  <input matInput [(ngModel)]="meal" />
+  <mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Abbrechen</button>
+    <button mat-button [mat-dialog-close]="meal()" cdkFocusInitial>Hinzufügen</button>
+  </mat-dialog-actions>
+</div>

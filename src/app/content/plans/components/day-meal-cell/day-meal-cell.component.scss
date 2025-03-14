@@ -1,3 +1,4 @@
+@use '../../../../stylepattern/colors';
 
 .add-button {
         text-align: right;
@@ -5,6 +6,25 @@
     }
     
 .meal-cell {
-    margin: 1rem;
+    margin: .8rem 1rem;
     text-align: start;
+    min-height: 2rem;
+
+    .meal {
+        display: flex;
+        margin: .2rem 0;
+        padding: .5rem;
+        border: 1px solid colors.$mealer-blue2;
+        border-radius: .2rem;
+
+        span {
+            flex: 1;
+            margin: auto;
+            padding-left: .2rem;
+        }
+
+        .meal-cell-delete {
+            cursor: pointer;
+        }
+    }
 }

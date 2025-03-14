@@ -8,20 +8,20 @@
         </tr>
         
     </thead>
-    <tbody>
+    <tbody cdkDropListGroup>
         <tr *ngFor="let day of weekdays">
             <th class="plan-day-header" style="max-width: 8rem;">
                 <h2>{{day.name}}</h2>
                 <p>{{day.date | date : "dd.MM.yy"}}</p>
             </th>
             <td>
-                <app-day-meal-cell [curDay]="day" [curType]="getMealType(0)"></app-day-meal-cell>
+                <app-day-meal-cell #cmp0 [curDay]="day" [curType]="getMealType(0)"></app-day-meal-cell>
             </td>
             <td>
-                <app-day-meal-cell [curDay]="day" [curType]="getMealType(1)"></app-day-meal-cell>
+                <app-day-meal-cell #cmp1 [curDay]="day" [curType]="getMealType(1)"></app-day-meal-cell>
             </td>
             <td>
-                <app-day-meal-cell [curDay]="day" [curType]="getMealType(2)"></app-day-meal-cell>
+                <app-day-meal-cell #cmp2 [curDay]="day" [curType]="getMealType(2)"></app-day-meal-cell>
             </td>
         </tr>
     </tbody>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Day, MealType } from './models/day.model';
 import { Week } from './models/week.model';
 
